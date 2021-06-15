@@ -1,0 +1,105 @@
+:root{
+    --color-purple : #7d71d3;
+    --color-light-purple: #afa0ff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+button{
+    outline:0;
+    border:none;
+    background:transparent;
+}
+
+button,button:focus{
+    cursor:pointer;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+/*=== nav ===*/
+nav{
+    width:100%;
+    padding:25px 16px;
+    background-color:var(--color-purple);
+    position:sticky;
+    top: 0;
+}
+
+nav .container{
+    max-width:720px;
+    margin: 0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.container > a{
+    margin-left: 1rem;
+}
+
+.moreBtn{
+    color:white;
+    font-size:1.25rem;
+    margin-right: 1rem;
+}
+
+main{
+    width:100%;
+    height:100%;
+    background-color: var(--color-light-purple);
+    padding: 150px 0 100px;
+}
+
+.homeBanner_container{
+    width:100%;
+}
+
+.homeBanner_container .row{
+    margin: 0 auto;
+    max-width:720px;
+    display: flex;
+}
+
+.homeBanner_container .row .content{
+    margin-right: 100px;
+}
+
+.homeBanner_container .row .content h1{
+    color:white;
+    font-size:4rem;
+}
+
+.homeBanner_container .row .content h5{
+    margin-top: 30px;
+    color:white;
+    font-size:1rem;
+}
+
+.homeBanner_container .row .content a{
+    width:280px;
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color: #232323;
+    color:white;
+    display:flex;
+    align-items:center;
+}
+
+.homeBanner_container .row .content a i{
+    margin-right: 20px;
+    font-size: 3rem;
+}
+
+.iphone_banner{
+    max-height:550px;
+}
+

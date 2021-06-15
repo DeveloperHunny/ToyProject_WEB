@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+button{
+    background:transparent;
+    border:none;
+    outline:none;
+}
+
+button,button:focus{
+    cursor:pointer;
+}
+
+.title{
+    width:100%;
+    border-bottom: 1px solid black;
+}
+
+.title h1{
+    text-align:center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.main{
+    width:100%;
+    margin-top : 10px;
+}
+
+section{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.section_btns{
+    width:80%;
+    text-align:center;
+    padding:18px;
+    background:#bfbbbf;
+    font-size:20px;
+}
+
+.contents{
+    margin-top:10px;
+    width:80%;
+    font-size: 16px;
+    font-style: italic;
+    display:none;
+}
+
+.is_active{
+    display:block;
+}
