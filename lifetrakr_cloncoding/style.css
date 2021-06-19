@@ -75,7 +75,7 @@ nav .menu li a{
     margin-left: 1rem;
 }
 
-.is_on{
+nav .is_on{
     display:block !important;
 }
 
@@ -89,36 +89,41 @@ nav .menu li a{
 main{
     width:100%;
     height:100%;
-    background-color: var(--color-light-purple);
+}
+
+.row{
+    margin: 0 auto;
+    max-width:720px;
+}
+
+/*=== banner_contentBox ===*/
+.banner_contentBox{
+    width:100%;
+    background: var(--color-light-purple);
+
     padding: 80px 0 100px;
 }
 
-.homeBanner_container{
-    width:100%;
+.banner_contentBox .row{
+    display:flex;
 }
 
-.homeBanner_container .row{
-    margin: 0 auto;
-    max-width:720px;
-    display: flex;
-}
-
-.homeBanner_container .row .content{
+.banner_contentBox .leftBox{
     margin-right: 100px;
 }
 
-.homeBanner_container .row .content h1{
+.banner_contentBox .leftBox h1{
     color:white;
     font-size:4rem;
 }
 
-.homeBanner_container .row .content h5{
+.banner_contentBox .leftBox h5{
     margin-top: 30px;
     color:white;
     font-size:1rem;
 }
 
-.homeBanner_container .row .content a{
+.banner_contentBox .leftBox a{
     width:280px;
     margin-top: 10px;
     padding: 10px 25px;
@@ -128,7 +133,7 @@ main{
     align-items:center;
 }
 
-.homeBanner_container .row .content a i{
+.banner_contentBox .leftBox a i{
     margin-right: 20px;
     font-size: 3rem;
 }
@@ -136,4 +141,108 @@ main{
 .iphone_banner{
     max-height:550px;
 }
+
+/*===brief_contentBox===*/
+
+.brief_contentBox{
+    width:100%;
+    background-color:rgba(100,100,100,0.1);
+    padding: 80px 0px 80px 0px;
+    
+}
+
+.brief_contentBox .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iphone_feature{
+    max-height:600px;
+}
+
+.brief_contentBox .item{
+    display:flex;
+    background: white;
+    max-width:600px;
+    padding:30px;
+    margin-top:30px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.brief_contentBox .item > i{
+    font-size: 2.5rem;
+    color:var(--color-purple);
+}
+
+.brief_contentBox .item .content{
+    margin-left: 30px;
+}
+
+
+.brief_contentBox .content h3{
+    margin-bottom:10px;
+    font-size:1.2rem;
+}
+
+.brief_contentBox .content p{
+    line-height:1.5;
+}
+
+.brief_contentBox .is_on, .brief_contentBox .is_on > i{
+    background:var(--color-purple);
+    color:white;
+}
+
+/*=== feature_contentBox ===*/
+.feature_contentBox{
+    background:white;
+    padding:60px 0px 60px 0px;
+}
+
+.feature_contentBox .row{
+    max-width:720px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.feature_contentBox p{
+    margin-top:15px;
+    color:#999999
+}
+
+.feature_contentBox .content{
+    margin-top: 40px;
+}
+
+.feature_contentBox .content h3{
+    margin-top:15px;
+}
+
+#feature_top h1{
+    font-size:42px;
+}
+
+#feature_top p{
+    display:block;
+    margin:30px auto;
+    width:70%;
+}
+
+.feature_contentBox .content > i{
+    font-size:4rem;
+    color:var(--color-purple);
+}
+
+.feature_contentBox .iphone_screen{
+    margin-top:40px;
+    max-height:400px;
+}
+
+
+
+
+
 

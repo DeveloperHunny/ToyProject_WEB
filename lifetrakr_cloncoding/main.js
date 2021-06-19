@@ -14,3 +14,19 @@ nav_moreBtn.addEventListener("click", () => {
         moreBtn_IsOn = false;
     }
 });
+
+
+let items = document.querySelectorAll(".brief_contentBox .container .item");
+let selectedIndex = 0;
+
+console.log(items);
+
+let selectItem = (index) => {
+    items[selectedIndex].classList.remove("is_on");
+    items[index].classList.add("is_on");
+    selectedIndex = index;
+}
+
+for(let i = 0; i < items.length; i++){
+    items[i].addEventListener("click", () => {  selectItem(i); }   );
+}
