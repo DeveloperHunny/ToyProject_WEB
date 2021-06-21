@@ -445,7 +445,7 @@ main{
     background:rgba(100,100,100,0);
 }
 
-.row{
+.team_contentBox .row{
     max-width:720px;
     padding:60px 0px;
 }
@@ -547,6 +547,130 @@ main{
 .team_contentBox .sns_container button:hover{
     color:var(--color-purple);
 }
+
+/*=== review_contentBox ===*/
+.review_contentBox{
+    width:100%;
+    background:var(--color-purple);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.review_contentBox .row{
+    max-width:720px;
+    padding:60px 0px;
+}
+
+.review_top{
+    width:100%;
+    text-align:center;
+}
+
+.review_top h1{
+    font-size:3rem;
+    font-weight:lighter;
+    margin-bottom:30px;
+}
+
+.review_top p{
+    margin: 0 auto;
+    display: block;
+    width:65%;
+    line-height:2;
+}
+
+.review_contentBox .content{
+    /*display:flex*/
+    display:none;
+}
+
+.review_contentBox .content:nth-child(1){
+    display:flex;
+}
+
+.review_contentBox .content .imgContainer{
+    min-height:350px;
+    min-width:300px;
+    margin-right:15px;
+    background-size:cover;
+    background-position: 15px 0;
+    background-repeat:no-repeat;
+    
+}
+
+.review_contentBox .commentBox{
+    min-width:390px;
+    background:white;
+    width:50%;
+    padding:24px;
+} 
+
+.review_contentBox .commentBox .title{
+    font-weight:bold;
+    color:black;
+}
+
+.review_contentBox .commentBox p{
+    margin-top:15px;
+    color:#999999;
+    font-size:1.5rem;
+    font-style:italic;
+}
+
+.review_contentBox .commentBox .name{
+    display:block;
+    margin-top:15px;
+    color:black;
+}
+
+.review_contentBox .commentBox .info{
+    color:#999999;
+    display:block;
+    margin-top:15px;
+    font-size:0.8rem;
+}
+
+.review_contentBox .container button{
+    position:absolute;
+    width:50px;
+    height:50px;
+    background:white;
+    border-radius:5px;
+    color:#999999;
+    font-size:1.2rem;
+    transform:translateY(-50%);
+}
+
+.review_contentBox .container button:hover{
+    color:var(--color-purple);
+}
+
+.review_contentBox .container{
+    margin-top:60px;
+    width:100%;
+    position:relative;
+}
+
+.review_contentBox .container .leftBtn{
+    left:-80px;
+    top:50%;
+}
+
+.review_contentBox .container .rightBtn{
+    right:-80px;
+    top:50%;
+}
+
+.review_contentBox .container button > i{
+    display:block;
+    margin:0 auto;
+}
+
+
+
+
 
 
 
