@@ -63,5 +63,54 @@ buttons[1].addEventListener("click", () => {
     openComment();
 });
 
+//*=== scroll event ===*//
+
+let srollPosition = null;
+let nav = document.querySelector("nav");
+document.addEventListener('scroll',() => {
+    scrollPosition = document.querySelector("html").scrollTop;
+    if(scrollPosition === 0){nav.classList.add("is_top");}
+    else nav.classList.remove("is_top");
+})
+
+//*=== numberCount effect ===*//
+let is_active = false;
+let timerID = new Array(4);
+let timerInfo = [0,0,0,0];
+let test;
+
+let timer = (targetNumber, targetObject, index, offset) => {
+    var diff = targetNumber - timerInfo[index];
+    if(diff < 1){timerInfo[index] = targetNumber; targetObject.innerText = String(timerInfo[index]);
+        clearInterval(timerID[index]);
+    }
+    else{timerInfo[index] += offset; targetObject.innerText = String(timerInfo[index]);}
+    
+};
+
+let numberCounter = (targetNumber, targetObject,index) => {
+    timerID[index] = setInterval(() => {
+        var offset = Math.ceil(targetNumber/40); //duration 2s (50 * 40 = 2000)
+        timer(targetNumber,targetObject,index, offset);
+    }, 50)
+}
+
+let showCountEffect = () => {
+    let content = document.querySelectorAll(".record_contentBox .content .count");
+    for(let i = 0; i < content.length; i++){
+        let targetNumber = parseInt(content[i].innerText);
+        numberCounter(targetNumber, content[i],i);
+    }
+}
+
+document.addEventListener('scroll',() => {
+    scrollPosition = document.querySelector("html").scrollTop;
+    if(scrollPosition >= 5605 && scrollPosition <= 6612){
+        if(!is_active){
+            showCountEffect();
+            is_active = true;
+        }
+    }
+});
 
 
