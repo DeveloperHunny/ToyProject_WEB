@@ -77,7 +77,6 @@ document.addEventListener('scroll',() => {
 let is_active = false;
 let timerID = new Array(4);
 let timerInfo = [0,0,0,0];
-let test;
 
 let timer = (targetNumber, targetObject, index, offset) => {
     var diff = targetNumber - timerInfo[index];
@@ -106,11 +105,17 @@ let showCountEffect = () => {
 document.addEventListener('scroll',() => {
     scrollPosition = document.querySelector("html").scrollTop;
     if(scrollPosition >= 5605 && scrollPosition <= 6612){
+        console.log(is_active);
         if(!is_active){
+            timerInfo = [0,0,0,0];
             showCountEffect();
             is_active = true;
         }
     }
+    else{
+        is_active = false;
+    }
+    
 });
 
 
