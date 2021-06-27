@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+button,button:focus{
+    cursor:pointer;
+}
+
+button{
+    padding:10px;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:10px;
+    background: rgba(100,100,100,0.2);
+    outline:none;
+    border:2px solid black;
+}
+
+p{
+    width:60%;
+}
+
+
+.box{
+    width:200px;
+    height:200px;
+    background:skyblue;
+    border-radius:10px;
+    position:absolute;
+    font-size:1em;
+}
