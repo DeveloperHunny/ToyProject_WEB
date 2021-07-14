@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/d040bc7e91.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>WATCHES</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     <nav>
@@ -14,19 +15,20 @@
             <a href="index.html" class="logo">Watch</a>
             <div class="tab">
                 <ul>
+                    <li><a href="#collection" id="testID">WATCHES</a></li>
+                    <li><a href="#introduction">STORE</a></li>
+                    <li><a href="#page_bottom">CONTACT</a></li>
+                    <li><a href="#page_top">REQUEST VIRTUAL</a></li>
                     <li>
-                        <a href="#">WATCHES</a>
-                        <a href="#">STORE</a>
-                        <a href="#">CONTACT</a>
-                        <a href="#">REQUEST VIRTUAL</a>
-                        <a href="#">CALLING</a>
+                        <button><i class="fas fa-phone-alt"></i></button>
+                        <p>1 (800) 862 6772</p>
                     </li>
                 </ul>
             </div>
             <button class="moreBtn"><i class="fas fa-bars"></i></button>
         </div>
     </nav>
-    <section class="page_top">
+    <section class="page_top" id="page_top">
         <div class="bgContainer"></div>
         <div class="container">
             <div class="textContent">
@@ -39,7 +41,7 @@
 
         </div>
     </section>
-    <section class="introduction">
+    <section class="introduction" id="introduction">
         <div class="bgContainer"></div>
         <div class="container">
             <div class="textContent">
@@ -64,7 +66,7 @@
         </div>
 
     </section>
-    <section class="collection">
+    <section class="collection" id="collection">
         <div class="container">
             <h1 class="title">COLLECTIONS</h1>
             <div class="buttonContainer">
@@ -90,8 +92,46 @@
                     </div>
                 </div>
             </div>
-
-
+            <div class="content">
+                    <div class="itemContainer">
+                        <div class="item">
+                            <img src="img/watch-1.png">
+                            <h1>ADRIATICA ADR</h1>
+                            <p class="price">$650.00</p>
+                        </div>
+                        <div class="item">
+                            <img src="img/watch-2.png">
+                            <h1>SEIKO SNZGO7K1</h1>
+                            <p class="price">$126.00</p>
+                        </div>
+                        <div class="item">
+                            <img src="img/watch-3.png">
+                            <h1>ROAMER RM 220837</h1>
+                            <p class="price">$250.00</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="content">
+                    <div class="itemContainer">
+                        <div class="item">
+                            <img src="img/watch-1.png">
+                            <h1>ADRIATICA ADR</h1>
+                            <p class="price">$650.00</p>
+                        </div>
+                        <div class="item">
+                            <img src="img/watch-2.png">
+                            <h1>SEIKO SNZGO7K1</h1>
+                            <p class="price">$126.00</p>
+                        </div>
+                        <div class="item">
+                            <img src="img/watch-3.png">
+                            <h1>ROAMER RM 220837</h1>
+                            <p class="price">$250.00</p>
+                        </div>
+                    </div>
+            </div>
+            <button><i class="fas fa-arrow-left"></i></button>
+            <button><i class="fas fa-arrow-right"></i></button>
         </div>
     </section>
     <section class="company">
@@ -144,7 +184,7 @@
             </ul>
         </div>
     </section>
-    <section class="page_bottom">
+    <section class="page_bottom" id="page_bottom">
         <div class="container">
             <div class="menu">
                 <div class="box logoBox">
@@ -189,5 +229,6 @@
         </div>
 
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
